@@ -23,7 +23,8 @@ function Storage(config){
 		host     : config.mysqlHost,
 		user     : config.mysqlUser,
 		password : config.mysqlPassword,
-		database : config.mysqlDB
+		database : config.mysqlDB,
+		port 	 : config.mysqlPort
 	});
 	handleDisconnect(this, connection);
 	connection.connect();
